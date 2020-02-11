@@ -4,7 +4,7 @@ include 'cooked_funcs.php';
 
 ExecuteSQL($conn,
 	"INSERT INTO Recipes (name, source, description)
-	VALUES ('Bob\'s Ice Cream', 'Bob\'s Wife at Blount Memorial Hospital', 'Denise\'s Favorite Ice Cream')
+	VALUES ('Bob\'s Ice Cream', 'Bob\'s Wife at Blount Memorial Hospital', 'Easy Granular Ice Cream')
 	;", FALSE);
 
 $RecipeID = mysqli_insert_id($conn);

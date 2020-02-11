@@ -4,7 +4,7 @@ include 'cooked_funcs.php';
 
 ExecuteSQL($conn,
 	"INSERT INTO Recipes (name, source, description)
-	VALUES ('Garlic Rosemary Mashed Potatoes', 'Science of Good Cooking, p238', 'Denise\'s favorite mashed potatoes, similar to Cheesecake Factory')
+	VALUES ('Garlic Rosemary Mashed Potatoes', 'Science of Good Cooking, p238', 'Similar to Cheesecake Factory')
 	;", FALSE);
 
 $RecipeID = mysqli_insert_id($conn);

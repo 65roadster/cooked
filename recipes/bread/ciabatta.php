@@ -5,7 +5,7 @@ include 'cooked_funcs.php';
 $recipeInfoArray = array(
 	"Ciabatta",
 	"ATK Baking Book",
-	"Denise\'s Favorite"
+	"Excellent Ciabatta"
 );
 
 $tagArray = array(

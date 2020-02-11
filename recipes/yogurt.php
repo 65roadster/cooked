@@ -5,7 +5,7 @@ include 'cooked_funcs.php';
 $recipeInfoArray = array(
 	"Yogurt",
 	"Ray",
-	"Denise loves"
+	"Very Tangy"
 );
 
 $tagArray = array(

@@ -8,9 +8,9 @@ Place the entire contents of the 'cooked' folder in a publicly accessible area o
 
 Edit the creds.php file with the username and password for your mysql database.
 
-Go to http://yourdomain.com/cooked/admin.php and click on "Reload Database" to create the database, tables, and load the example recipes. Click on "View Reclipe List" to start using the website.
+Go to http://yourdomain.com/cooked/initdb.php which will blow away everything in the database and repopulate it from scratch. Then go to http://yourdomain.com/cooked to view the recipe list.
 
-All recipes are stored under cooked/recipes. Each of these files are executed during the database load so only put trusted files in this directory. To add, edit, or remove a recipe, add, edit or remove files in the recipes/ directory.
+All recipes are stored under cooked/recipes. Each of these php files are executed during the database load so only put trusted files in this directory. To add, edit, or remove a recipe, add, edit or remove files in the recipes/ directory. Look at this files for exmaples on how to add your own recipes to the database.
 
 ### Prerequisites
 
