@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 1px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+header description {
+  font-size: 20px;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+errormsg {
+	color: red;
+	font-weight: bold;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+ingredients {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+ingredients ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+instructions {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+/*
+ * TAG-LIST
+*/
+
+.tag-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 150px);
+}
+
+.tag-grid>* {
+// background-color: green;
+// height: 200px;
+}
+
+.tag-list {
+	background-color: #666;
+	padding: 5px 0px 30px 20px;
+	font-size: 20px;
+	color: white;
+}
+
+.tag-list h1 {
+	font-size: 30px;
+	text-align: center;
+}
+
+tag-tag {
+	padding: 50px 50px 50px 50px;
+	margin: 10px 10px 10px 10px;
+	font-size: 10px;
+}
+
+
+/*
+ * RECIPE-LIST
+*/
+.recipe-list {
+  padding: 0px;
+  font-size: 20px;
+}
+
+.recipe-list h1 {
+	font-size: 30px;
+}
+
+.recipe-list td { 
+	font-size: 15px;
+	padding:0px;
+	border:#aaaaaa 1px solid;
+}
+
+
+/* provide some minimal visual accomodation for IE8 and below */
+.recipe-list tr{
+	background: #b8d1f3;
+	padding: 10px;
+}
+/*  Define the background color for all the ODD background rows  */
+.recipe-list tr:nth-child(odd){ 
+	background: #aaaaaa;
+	padding: 10px;
+}
+/*  Define the background color for all the EVEN background rows  */
+.recipe-list tr:nth-child(even){
+	background: #ffffff;
+	padding: 10px;
+}
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+table.headertable{ 
+    padding: 0px;
+}
